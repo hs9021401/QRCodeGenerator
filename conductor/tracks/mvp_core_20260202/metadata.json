@@ -1,0 +1,8 @@
+{
+  "track_id": "mvp_core_20260202",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-02-02T16:50:00Z",
+  "updated_at": "2026-02-02T16:50:00Z",
+  "description": "建立一個整合 QR Code 批次產生、自動 A4 Word 排版（支援指定 cm 尺寸）以及單一執行檔封裝的桌面應用程式。"
+}
