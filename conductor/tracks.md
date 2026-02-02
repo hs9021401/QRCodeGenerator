@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [~] **Track: 開發核心功能與 GUI 介面**
+- [x] **Track: 開發核心功能與 GUI 介面**
   *Link: [./tracks/mvp_core_20260202/](./tracks/mvp_core_20260202/)*

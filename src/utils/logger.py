@@ -6,7 +6,7 @@ def setup_logger():
     if not os.path.exists("logs"):
         os.makedirs("logs")
     
-    log_filename = f"logs/app_{datetime.now().strftime(\"%Y%m%d\")}.log"
+    log_filename = f"logs/app_{datetime.now().strftime('%Y%m%d')}.log"
     
     logging.basicConfig(
         level=logging.INFO,

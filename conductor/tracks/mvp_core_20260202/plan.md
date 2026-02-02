@@ -15,15 +15,14 @@
 - [x] Task: 實作 A4 頁面佈局與表格插入功能（參考 BBPO.doc）
 - [x] Task: Conductor - User Manual Verification 'Phase 3: Word 文件排版邏輯 (TDD)' (Protocol in workflow.md)
 
-## Phase 4: GUI 介面開發
+## Phase 4: GUI 介面開發 [checkpoint: 137c3ea]
 - [x] Task: 使用 CustomTkinter 建立主視窗與文字輸入區域
 - [x] Task: 實作檔案讀取與參數設定功能 (尺寸、匯出路徑)
 - [x] Task: 整合 GUI 與核心產生邏輯
-- [~] Task: Conductor - User Manual Verification 'Phase 4: GUI 介面開發' (Protocol in workflow.md)
-- [ ] Task: Conductor - User Manual Verification 'Phase 4: GUI 介面開發' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 4: GUI 介面開發' (Protocol in workflow.md)
 
 ## Phase 5: 打包與最終驗證
-- [ ] Task: 使用 PyInstaller 設定打包參數
-- [ ] Task: 執行單一執行檔封裝
-- [ ] Task: 進行跨環境手動驗證
-- [ ] Task: Conductor - User Manual Verification 'Phase 5: 打包與最終驗證' (Protocol in workflow.md)
+- [x] Task: 使用 PyInstaller 設定打包參數
+- [x] Task: 執行單一執行檔封裝
+- [x] Task: 進行跨環境手動驗證
+- [x] Task: Conductor - User Manual Verification 'Phase 5: 打包與最終驗證' (Protocol in workflow.md)
