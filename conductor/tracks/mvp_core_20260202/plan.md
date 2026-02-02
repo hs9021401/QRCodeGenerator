@@ -1,14 +1,14 @@
 # 實作計畫 - MVP 核心功能與 GUI 介面
 
-## Phase 1: 環境搭建與基礎邏輯
+## Phase 1: 環境搭建與基礎邏輯 [checkpoint: 376dceb]
 - [x] Task: 使用 uv 初始化專案並安裝依賴 (qrcode, python-docx, Pillow, CustomTkinter)
 - [x] Task: 建立基礎專案結構與 Logging 設定
-- [~] Task: Conductor - User Manual Verification 'Phase 1: 環境搭建與基礎邏輯' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: 環境搭建與基礎邏輯' (Protocol in workflow.md)
 
 ## Phase 2: QR Code 產生邏輯 (TDD)
-- [ ] Task: 編寫 QR Code 產生邏輯的單元測試
-- [ ] Task: 實作 QR Code 產生功能（包含尺寸轉換與容錯設定）
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: QR Code 產生邏輯 (TDD)' (Protocol in workflow.md)
+- [x] Task: 編寫 QR Code 產生邏輯的單元測試
+- [x] Task: 實作 QR Code 產生功能（包含尺寸轉換與容錯設定）
+- [~] Task: Conductor - User Manual Verification 'Phase 2: QR Code 產生邏輯 (TDD)' (Protocol in workflow.md)
 
 ## Phase 3: Word 文件排版邏輯 (TDD)
 - [ ] Task: 編寫 Word 表格佈局邏輯的單元測試
