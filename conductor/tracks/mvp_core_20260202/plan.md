@@ -10,15 +10,16 @@
 - [x] Task: 實作 QR Code 產生功能（包含尺寸轉換與容錯設定）
 - [x] Task: Conductor - User Manual Verification 'Phase 2: QR Code 產生邏輯 (TDD)' (Protocol in workflow.md)
 
-## Phase 3: Word 文件排版邏輯 (TDD)
+## Phase 3: Word 文件排版邏輯 (TDD) [checkpoint: e91b876]
 - [x] Task: 編寫 Word 表格佈局邏輯的單元測試
 - [x] Task: 實作 A4 頁面佈局與表格插入功能（參考 BBPO.doc）
-- [~] Task: Conductor - User Manual Verification 'Phase 3: Word 文件排版邏輯 (TDD)' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Word 文件排版邏輯 (TDD)' (Protocol in workflow.md)
 
 ## Phase 4: GUI 介面開發
-- [ ] Task: 使用 CustomTkinter 建立主視窗與文字輸入區域
-- [ ] Task: 實作檔案讀取與參數設定功能 (尺寸、匯出路徑)
-- [ ] Task: 整合 GUI 與核心產生邏輯
+- [x] Task: 使用 CustomTkinter 建立主視窗與文字輸入區域
+- [x] Task: 實作檔案讀取與參數設定功能 (尺寸、匯出路徑)
+- [x] Task: 整合 GUI 與核心產生邏輯
+- [~] Task: Conductor - User Manual Verification 'Phase 4: GUI 介面開發' (Protocol in workflow.md)
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: GUI 介面開發' (Protocol in workflow.md)
 
 ## Phase 5: 打包與最終驗證
