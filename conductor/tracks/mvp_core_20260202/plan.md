@@ -5,15 +5,15 @@
 - [x] Task: 建立基礎專案結構與 Logging 設定
 - [x] Task: Conductor - User Manual Verification 'Phase 1: 環境搭建與基礎邏輯' (Protocol in workflow.md)
 
-## Phase 2: QR Code 產生邏輯 (TDD)
+## Phase 2: QR Code 產生邏輯 (TDD) [checkpoint: 0c1d3f4]
 - [x] Task: 編寫 QR Code 產生邏輯的單元測試
 - [x] Task: 實作 QR Code 產生功能（包含尺寸轉換與容錯設定）
-- [~] Task: Conductor - User Manual Verification 'Phase 2: QR Code 產生邏輯 (TDD)' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: QR Code 產生邏輯 (TDD)' (Protocol in workflow.md)
 
 ## Phase 3: Word 文件排版邏輯 (TDD)
-- [ ] Task: 編寫 Word 表格佈局邏輯的單元測試
-- [ ] Task: 實作 A4 頁面佈局與表格插入功能（參考 BBPO.doc）
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Word 文件排版邏輯 (TDD)' (Protocol in workflow.md)
+- [x] Task: 編寫 Word 表格佈局邏輯的單元測試
+- [x] Task: 實作 A4 頁面佈局與表格插入功能（參考 BBPO.doc）
+- [~] Task: Conductor - User Manual Verification 'Phase 3: Word 文件排版邏輯 (TDD)' (Protocol in workflow.md)
 
 ## Phase 4: GUI 介面開發
 - [ ] Task: 使用 CustomTkinter 建立主視窗與文字輸入區域
