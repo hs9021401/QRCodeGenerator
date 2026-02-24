@@ -20,6 +20,19 @@ class QRGenerator:
             "H": qrcode.constants.ERROR_CORRECT_H,
         }
 
+    @staticmethod
+    def sanitize_filename(text):
+        """
+        清洗文字使其符合 Windows 檔名規則
+        """
+        import re
+        # Windows 不允許字元: \ / : * ? " < > |
+        # 同時移除換行符號
+        clean_text = re.sub(r'[\\/:*?"<>|]', '_', text)
+        clean_text = clean_text.replace('\n', '_').replace('\r', '')
+        # 限制長度，避免過長檔名問題
+        return clean_text[:150].strip()
+
     def generate(self, text, size_cm=None, error_correction="Q"):
         """
         產生包含文字標籤的 QR Code 圖片

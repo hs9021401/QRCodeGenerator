@@ -1,0 +1,19 @@
+# PyInstaller / Build
+build/
+dist/
+!dist/*.exe
+dist/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+
+# Project specific
+.python-version

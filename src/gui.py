@@ -26,7 +26,7 @@ class App(ctk.CTk):
         super().__init__()
 
         # 版本號與視窗標題
-        self.version = "v1.0.20260202"
+        self.version = "v2.0.20260224"
         self.title(f"QR Code 批量產生與文件整合工具 {self.version}")
         self.geometry("800x680")
         
@@ -83,6 +83,9 @@ class App(ctk.CTk):
 
         self.generate_button = ctk.CTkButton(self.controls_frame, text="產生 Word 文件", command=self.generate, fg_color="green", hover_color="#006400", font=ctk.CTkFont(size=16, weight="bold"))
         self.generate_button.grid(row=1, column=1, padx=10, pady=10)
+
+        self.export_png_button = ctk.CTkButton(self.controls_frame, text="匯出 PNG 圖片", command=self.export_png, fg_color="#1f538d", hover_color="#14375e", font=ctk.CTkFont(size=14))
+        self.export_png_button.grid(row=1, column=2, padx=10, pady=10)
 
         # Footer 區域
         self.footer_frame = ctk.CTkFrame(self, fg_color="transparent")
@@ -161,6 +164,59 @@ class App(ctk.CTk):
             self.set_status("產生失敗")
         finally:
             shutil.rmtree(temp_dir)
+
+    def export_png(self):
+        lines = self.input_text.get("1.0", "end-1c").splitlines()
+        lines = [line.strip() for line in lines if line.strip()]
+
+        if not lines:
+            messagebox.showwarning("警告", "請輸入至少一行文字內容。")
+            return
+
+        try:
+            qr_size = float(self.size_entry.get())
+        except ValueError:
+            messagebox.showerror("錯誤", "尺寸必須是數字。")
+            return
+
+        output_dir = filedialog.askdirectory(title="選擇匯出圖片的資料夾")
+        
+        if not output_dir:
+            return
+
+        self.set_status("正在匯出圖片，請稍候...")
+        self.update()
+
+        try:
+            used_filenames = {}
+            count = 0
+            for text in lines:
+                # 產生圖片
+                img = self.qr_gen.generate(text, size_cm=qr_size)
+                
+                # 清洗檔名
+                base_name = self.qr_gen.sanitize_filename(text)
+                if not base_name:
+                    base_name = "unnamed"
+                
+                # 處理重複檔名
+                final_name = base_name
+                if final_name in used_filenames:
+                    used_filenames[base_name] += 1
+                    final_name = f"{base_name}_{used_filenames[base_name]}"
+                else:
+                    used_filenames[base_name] = 0
+                
+                img_path = os.path.join(output_dir, f"{final_name}.png")
+                img.save(img_path)
+                count += 1
+
+            self.set_status(f"完成！已匯出 {count} 張圖片至: {output_dir}")
+            messagebox.showinfo("成功", f"已成功匯出 {count} 張圖片至：\n{output_dir}")
+        except Exception as e:
+            logger.exception("匯出 PNG 過程中發生錯誤")
+            messagebox.showerror("錯誤", f"匯出過程中發生錯誤: {e}")
+            self.set_status("匯出失敗")
 
 if __name__ == "__main__":
     app = App()
