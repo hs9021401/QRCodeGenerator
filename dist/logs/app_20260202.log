@@ -1,9 +1,0 @@
-2026-02-02 17:21:46,526 [INFO] QRCodeGen: 應用程式啟動中...
-2026-02-02 17:22:03,401 [INFO] src.gui: 處理中，請稍候...
-2026-02-02 17:22:03,414 [INFO] src.qr_generator: 產生圖文整合 QR Code: 'BBpp...', 尺寸: 4.8cm
-2026-02-02 17:22:03,452 [INFO] src.qr_generator: 產生圖文整合 QR Code: 'DD1123...', 尺寸: 4.8cm
-2026-02-02 17:22:03,469 [INFO] src.qr_generator: 產生圖文整合 QR Code: 'DSD344...', 尺寸: 4.8cm
-2026-02-02 17:22:03,487 [INFO] src.word_generator: 開始建立 Word 文件: K:/Side Project/QRCodeGenerator/dist/QR_20260202172157.docx
-2026-02-02 17:22:03,523 [INFO] src.word_generator: Word 文件儲存成功: K:/Side Project/QRCodeGenerator/dist/QR_20260202172157.docx
-2026-02-02 17:22:03,555 [INFO] src.gui: 完成！文件已儲存至: K:/Side Project/QRCodeGenerator/dist/QR_20260202172157.docx
-2026-02-02 17:26:05,094 [INFO] QRCodeGen: 應用程式啟動中...

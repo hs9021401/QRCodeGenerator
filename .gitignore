@@ -1,7 +1,6 @@
 # PyInstaller / Build
 build/
 dist/
-!dist/*.exe
 dist/logs/
 
 # Python
